@@ -3,6 +3,8 @@
     margin-bottom: 5em;
     overflow-y: hidden;
     animation: slide-up 0.8s;
+    transition-timing-function: ease-in;
+    
     .question-label{
         color: #02E746;
         font-size: 16px;

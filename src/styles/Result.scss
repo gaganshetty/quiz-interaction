@@ -3,6 +3,12 @@
     text-align: center;
     color: #545565;
     animation: slide-up 0.8s;
+    transition-timing-function: ease-in;
+
+    img{
+        width: 60px;
+        height: auto;
+    }
 
     .aggregate-value{
         font-size: 100px;
