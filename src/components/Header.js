@@ -5,7 +5,9 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import AllInclusiveIcon from '@material-ui/icons/AllInclusive';
 
-
+/**
+ * Header - Component which renders left section header
+ */
 export default function Header() {
     return (
         <div className="header-section">

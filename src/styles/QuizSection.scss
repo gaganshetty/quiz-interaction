@@ -8,20 +8,3 @@
         display: none;
     }   
 }
-
-.appear-animate{
-    animation: slide-up 2s !important;
-    transition-timing-function: ease-in !important;
-}
-
-@keyframes slide-up {
-    from {
-      margin-top: 30px; 
-      opacity: 0.2;
-    }
-  
-    to {
-      margin-top: 0px;
-      opacity: 1;
-    }
-  }

@@ -3,6 +3,10 @@ import '../styles/MainQuestionSection.scss'
 import Header from '../components/Header'
 import ProgressBar from '../components/ProgressBar'
 
+
+/**
+ * MainQuestionSection - Component which renders left section of the Quiz interaction page
+ */
 export default function MainQuestionSection() {
     return (
         <div className="main-question-section">

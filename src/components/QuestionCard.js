@@ -1,9 +1,22 @@
 import React, {useState} from 'react'
 import "../styles/QuestionCard.scss"
 
+/**
+     * QuestionCard - Returns each question and its answers
+     * @props question - each question object
+     * @props index - Index of the question
+     * @props lastIndex - returns last index in order to get overall result
+     * @props handleSubmit - function which checks if the answer is correct and stores current score
+     * @props handlesShowResult - function which calculates overall score
+     * @props currentQuestionIndex - returns currentIndex of the selected question
+     */
 export default function QuestionCard({question, index, lastIndex, handleSubmit, handleshowResult, currentQuestionIndex}) {
     const [selectedIndex, setselectedIndex] = useState(null);
 
+    /**
+     * handleOptionSelected - stores the selected answer index for a particular question
+     * @param index  Selected Answer index
+     */
     const handleOptionSelected = (index) => {
         setselectedIndex(index)
     }

@@ -2,6 +2,12 @@ import React, {useEffect, useState} from 'react'
 import "../styles/Result.scss"
 import MedalImage from '../medal.svg'
 
+/**
+ * Result - Component which renders Overall result score
+ * @props retry - function to trigger reset
+ * @props score - State which stores overall obtained score
+ * @props total - returns total number of questions
+ */
 export default function Result({retry, score, total}) {
     const [percentage, setPercentage] = useState(0)
 
