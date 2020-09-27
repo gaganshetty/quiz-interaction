@@ -1,0 +1,47 @@
+.result-container{
+    padding:0 8em;
+    text-align: center;
+    color: #545565;
+    animation: slide-up 0.8s;
+
+    .aggregate-value{
+        font-size: 100px;
+        font-weight: 700;
+    }
+    .message{
+        font-size: 30px;
+        font-weight: 500;
+    }
+    .success-ratio{
+        font-size: 14px;
+        font-weight: normal;
+        margin-top: 1em;
+    }
+
+    .Retry{
+        padding: 1em 5em;
+        background-color: #02E746;
+        margin-top: 1em;
+        border: none;
+
+        &:focus{
+            outline: none;
+        }
+
+        &:hover{
+            background-color: #2ecc71;
+        }
+    }
+}
+
+@keyframes slide-up {
+    from {
+      margin-top: 30px; 
+      opacity: 0.2;
+    }
+  
+    to {
+      margin-top: 0px;
+      opacity: 1;
+    }
+  }

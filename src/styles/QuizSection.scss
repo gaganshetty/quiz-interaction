@@ -1,0 +1,12 @@
+.quiz-section{
+    flex: 0.6;
+    max-width: 768px;
+    margin-right: auto;
+    padding: 8em 3em 5em 5em;
+    box-sizing: border-box;
+    overflow-y: scroll;
+
+    &::-webkit-scrollbar {
+        display: none;
+    }   
+}

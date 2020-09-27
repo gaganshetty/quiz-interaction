@@ -1,0 +1,52 @@
+.main-question-section{
+    background-image: url('../balloon-background-image.png'), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
+    flex: 0.4;
+    background-size:cover;
+    background-blend-mode: overlay;
+    margin-left: auto;
+
+    .main-question-section-body{
+        color: #fff;
+        padding: 4em 5em 0 8em;
+        max-width: 512px;
+        margin-left: auto;
+        animation: slide-up 0.8s;
+
+        .main-question-text{
+            font-size: 42px;
+            font-weight: 500;
+        }
+
+        .main-question-subtitle{
+            font-size: 18px;
+            font-weight: 300;
+            color: #EBE9F3;
+        }
+
+        .footer-wrapper{
+            margin-top: 10em;
+            .inventor{
+                font-size: 14px;
+                font-weight: 500;
+            }
+
+            .date{
+                margin-top: 1em;
+                font-size: 12px;
+                font-weight: 300;
+            }
+        }
+    }
+}
+
+@keyframes slide-up {
+    from {
+      margin-top: 30px; 
+      opacity: 0.2;
+    }
+  
+    to {
+      margin-top: 0px;
+      opacity: 1;
+    }
+  }

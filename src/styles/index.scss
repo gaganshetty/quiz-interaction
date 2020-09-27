@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+code{
+    font-family: source-code-pro, Melno, Monaco,
+    Consolas, 'Courier New',
+    monospace;
+}
+
+body > #root > div{
+    height: 100vh;
+}
+
+.cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #2ed573;
+    border-radius: 50%;
+    position: absolute;
+    pointer-events: none;
+  }
+  
+  .cursor::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    border: 8px solid #2ed573;
+    border-radius: 50%;
+    opacity: .2;
+    top: -8px;
+    left: -8px;
+    animation: cursorAnim2 .5s infinite alternate;
+  }
+  
+  @keyframes cursorAnim {
+    from {
+        transform: scale(1);
+    }
+    to {
+        -webkit-transform: scale(0.7);
+        transform: scale(0.7);
+    }
+  }
+  
+  @-webkit-keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.4);
+    }
+  }
+  
+  @keyframes cursorAnim2 {
+    from {
+        transform: scale(1);
+    }
+    to {
+        transform: scale(0.4);
+    }
+  }
+  
+  @-webkit-keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2.5);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+  }
+  
+  @keyframes cursorAnim3 {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(2.5);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 0;
+    }
+  }
+  
+  .expand {
+    animation: cursorAnim3 .5s forwards;
+    border: 2px solid #2ed573;
+  }
