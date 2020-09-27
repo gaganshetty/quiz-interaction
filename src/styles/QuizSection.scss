@@ -1,8 +1,5 @@
 .quiz-section{
-    flex: 0.6;
-    max-width: 768px;
-    margin-right: auto;
-    padding: 8em 3em 5em 5em;
+    padding: 8em 3em 10em 5em;
     box-sizing: border-box;
     overflow-y: scroll;
 
@@ -10,3 +7,20 @@
         display: none;
     }   
 }
+
+.appear-animate{
+    animation: slide-up 2s !important;
+    transition-timing-function: ease-in !important;
+}
+
+@keyframes slide-up {
+    from {
+      margin-top: 30px; 
+      opacity: 0.2;
+    }
+  
+    to {
+      margin-top: 0px;
+      opacity: 1;
+    }
+  }

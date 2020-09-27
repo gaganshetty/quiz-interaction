@@ -5,12 +5,11 @@ export default function QuestionCard({question, index, lastIndex, handleSubmit, 
     const [selectedIndex, setselectedIndex] = useState(null);
 
     const handleOptionSelected = (index) => {
-        console.log("selected Index",index)
         setselectedIndex(index)
     }
 
     return (
-        <div className="question-card-container" style={currentQuestionIndex !== index ? {pointerEvents: "none" ,opacity: "0.4" } : { opacity: "1" }}>
+        <div className="question-card-container" id={"Q"+index} style={currentQuestionIndex !== index ? {pointerEvents: "none" ,opacity: "0.4" } : { opacity: "1" }}>
             <div className="question-label">QUESTION {index + 1}</div>
             <div className="question-text">{question.questionText}</div>
             <div className='answer-section'>

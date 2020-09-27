@@ -34,7 +34,9 @@ export default function App() {
     return (
         <div className="container">
             <MainQuestionSection />
-            <QuizSection questions={questions}/>
+            <div className="quiz-wrapper">
+                <QuizSection questions={questions}/>
+            </div>
         </div>
     )
 }

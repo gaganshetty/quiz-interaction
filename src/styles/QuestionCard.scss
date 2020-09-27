@@ -1,10 +1,10 @@
 .question-card-container{
-    max-width: 500px;
+    height: 60vh;
     margin-bottom: 5em;
     overflow-y: hidden;
-    animation: slide-up 0.8s;
-    transition-timing-function: ease-in;
-    
+    // animation: slide-up 0.8s;
+    // transition-timing-function: ease-in;
+
     .question-label{
         color: #02E746;
         font-size: 16px;

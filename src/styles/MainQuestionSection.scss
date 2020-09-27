@@ -1,14 +1,12 @@
 .main-question-section{
     background-image: url('../balloon-background-image.png'), linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5));
-    flex: 0.4;
+    flex: 0.5;
     background-size:cover;
     background-blend-mode: overlay;
-    margin-left: auto;
 
     .main-question-section-body{
         color: #fff;
         padding: 4em 5em 0 8em;
-        max-width: 512px;
         margin-left: auto;
         animation: slide-up 0.8s;
         transition-timing-function: ease-in;

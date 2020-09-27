@@ -9,10 +9,18 @@ export default function QuizSection({questions}) {
     const [score, setScore] =  useState(0);
     
     const handleSubmit = (isCorrect) => {
+        debugger;
         if(isCorrect){
             setScore(score+1)
         }
         setCurrentQuestionIndex(currentQuestionIndex + 1)
+        let element = document.getElementById("Q"+currentQuestionIndex);
+        element.parentNode.scrollTop = element.offsetTop + 500;
+        let card = document.querySelectorAll('.question-card-container')[currentQuestionIndex + 1];
+        card.classList.add("appear-animate")
+        setTimeout(() => {
+           card.classList.add("appear-animate")
+        },2000)
     }
 
     const handleshowResult = (isCorrect) => {
